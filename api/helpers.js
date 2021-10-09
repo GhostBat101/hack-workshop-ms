@@ -9,7 +9,7 @@ module.exports = {
     },
     getMongoClient() {
         const { MongoClient } = require("mongodb");
-        const uri = process.env.MONGO_CONNECTION_STRING;
+        const uri = process.env.MONGO_CONNECTION_STRING = ("mongodb://hackworkdb:HKUW74b5plOjUI4nDu1wpXT721Nn7IjLC529k9OxJbLRGYAX5lDdYo8lVZ881z8i5rqDlIseQ1svh7wX10LFGw%3D%3D@hackworkdb.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&maxIdleTimeMS=120000&appName=@hackworkdb@");
         const client = new MongoClient(uri, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
